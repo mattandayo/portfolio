@@ -1,14 +1,13 @@
 - set_meta_tags charset: 'UTF-8'
-- set_meta_tags charset: 'UTF-8'
-- set_meta_tags title: Portfolio
+- set_meta_tags title: 'Portfolio'
 
 doctype html
 html lang='ja'
   head
+    = display_meta_tags
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
   body
     = yield
-    = javascript_pack_tag 'hello_vue'
