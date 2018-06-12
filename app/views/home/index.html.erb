@@ -1,5 +1,11 @@
 <div id="app">
-  {{ info }}
+  <ul>
+    <li v-for="item in items">
+      code: {{item.code}},
+      description: {{item.description}},
+      rate: {{item.rate}}
+    </li>
+  </ul>
 </div>
 
 <%= javascript_pack_tag 'home_vue' %>
